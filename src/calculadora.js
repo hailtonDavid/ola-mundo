@@ -10,29 +10,51 @@ import Col from 'react-bootstrap/Col'
 function Calculadora() {
   return (
     <Jumbotron style={{
-        background: 'transparent !important',
-        backgroundColor: '#007bff',
-        padding: '5px',
-        margin: '5px',
-        width: '400px'
-      }}>
+      background: 'transparent !important',
+      backgroundColor: '#007bff',
+      padding: '5px',
+      margin: '5px',
+      width: '400px'
+    }}>
       <Container>
-      <Row>
-      <Col xs = "3">
-      <Button variant="danger">
-      C
-      </Button>
-      </Col>
-      <Col xs = "9">
-      <Form.Control type="text"
-        name="txtNumeros"
-        className="text-right"
-        readOnly="readonly"
-        data-testid="txtNumeros" />
-      </Col>
-      </Row>
+        <Row>
+          <Col xs="3">
+            <Button variant="danger">
+              C
+            </Button>
+          </Col>
+          <Col xs="9">
+            <Form.Control type="text"
+              name="txtNumeros"
+              className="text-right"
+              readOnly="readonly"
+              data-testid="txtNumeros" />
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <Button variant="light">
+              7
+            </Button>
+          </Col>
+          <Col>
+            <Button variant="light">
+              8
+            </Button>
+          </Col>
+          <Col>
+            <Button variant="light">
+              9
+            </Button>
+          </Col>
+          <Col>
+            <Button variant="warning">
+              /
+            </Button>
+          </Col>
+        </Row>
       </Container>
-      </Jumbotron>
+    </Jumbotron>
   );
 }
 
